@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title th:utext="${title}" />
+    <link rel="stylesheet" th:href="@{/css/style.css}"/>
+</head>
+<body>
+<h1 th:utext="${title}" />
+<div class="wrapper">
+
+    <div class="left">
+        <img src="https://quintacapa.com.br/wp-content/uploads/2017/12/Gandalf-2.jpg"
+             alt="user" width="100">
+        <h4>Gandalf</h4>
+        <p>Wizard</p>
+        <div class="center">
+
+            <h6>Gandalf</h6>
+            <p>Wizard</p>
+        </div>
+    </div>
+
+    <div class="right">
+        <div class="info">
+            <h3>Name</h3>
+            <div class="data">
+                <h5>My Work Experience</h5>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
