@@ -26,10 +26,6 @@ public class AppController {
         this.portfolioService = portfolioService;
     }
 
-
-    @Value("${msg.title}")
-    private String title;
-
     @GetMapping("/{idPortfolio}")
     public ResponseEntity<PortfolioResponseDTO> findById(@PathVariable Long idPortfolio) {
         Optional<PortfolioEntity> portfolio = portfolioService.findById(idPortfolio);
@@ -48,12 +44,6 @@ public class AppController {
             return ResponseEntity.notFound().build();
         }
         return ResponseEntity.ok(portfolioService.save(portfolioService.toEntity(portfolioRequestDTO)));
-    }
-
-    @GetMapping(value = {"/", "/index"})
-    public String index(Model model) {
-        model.addAttribute("title", title);
-        return "index";
     }
 
 }
