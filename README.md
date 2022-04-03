@@ -16,7 +16,7 @@ This service provides information about users and their last tweets.
 - gradle build
 
 ### run
-- gradle build
+- gradle run
 
 ### Running on url
 <p>http://localhost:8080/</p>
