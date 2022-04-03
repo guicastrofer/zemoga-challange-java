@@ -1,5 +1,11 @@
 # zemoga-challange-java
 Portfolio Java Web App
 
-https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white
+
+Technologies
+Java: OPENJDK_11
+Spring Boot version: 2.6.5
+Database: Oracle
+Front: React
+Build tool: Gradle 7.4.1
 
